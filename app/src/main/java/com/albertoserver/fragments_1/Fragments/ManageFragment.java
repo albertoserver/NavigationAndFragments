@@ -27,22 +27,17 @@ public class ManageFragment extends Fragment {
     // Crear variable private Context context;
 
     public ManageFragment() {
-        context = getActivity();
+
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
+        context = getActivity();
         View rootView = inflater.inflate(R.layout.fragment_manage, container, false);
         // Todo el código necesario para que el frame funcione.
         lblManage = rootView.findViewById(R.id.lblManage);
-        btnManage.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Toast.makeText(context, "HOLA MUNDO", Toast.LENGTH_SHORT).show();
-            }
-        });
         return rootView;
     }
 
