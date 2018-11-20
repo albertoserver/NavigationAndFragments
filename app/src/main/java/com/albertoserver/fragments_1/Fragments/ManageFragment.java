@@ -23,9 +23,6 @@ public class ManageFragment extends Fragment {
     private TextView lblManage;
     private Button btnManage;
     private Context context;
-
-    // Crear variable private Context context;
-
     public ManageFragment() {
 
     }
